@@ -9,7 +9,8 @@ if quiz_begin != "yes":
 
 print("Woohoo let's begin!")
 
-# Quiz Variables
+
+# Defining the questions
 quiz_questions = ("Question 1. What are the only wild cats that live together in groups? ",
                   "Question 2. What animal uses its tough scales as armour, and will roll into a ball when threatened? ",
                   "Question 3. What animal has a fold of fur in their armpit that they use as a pocket? ",
@@ -20,7 +21,8 @@ answer_options = (("A. House Cats", "B. Tigers", "C. Lions"),
                 ("A. Sea Otter", "B. Kangaroo", "C. Chimps"), 
                 ("A. Pigeons ", "B. Crows", "C.Vultures"))
 
-# Answer Functions
+
+# Defining the answers
 correct_answers = ("C", "B", "A", "C")
 user_answers = []
 user_score = 0
@@ -32,7 +34,7 @@ for quiz_question in quiz_questions:
     for answer_option in answer_options[question_number]:
         print(answer_option)
     
-    make_guess = input("Is the correct answer either A, B, or C? ").strip().upper()
+    make_guess = input("Is the correct answer A, B, or C? ").strip().upper()
     user_answers.append(make_guess)
     if make_guess == correct_answers[question_number]:
         user_score += 1
@@ -40,20 +42,21 @@ for quiz_question in quiz_questions:
     else:
         print("That's not quite right! 🙈")
         print(f"{correct_answers[question_number]} is the answer")
-        question_number += 1
+
+    question_number += 1
 
 
 # Results Section
-print("----------------------")
+print("\nyes----------------------")
 print("    Your Results:     ")
 print("----------------------")
 
-print("Correct Answers: ", end="")
+print("\nCorrect Answers: ", end="")
 for correct_answer in correct_answers:
     print(correct_answer, end=" ")
 print()
 
-print("Your Answers:   ", end="")
+print("Your Answers: ", end="")
 for user_answer in user_answers:
     print(user_answer, end=" ")
 print()
