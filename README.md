@@ -14,4 +14,4 @@ How the quiz works:
 
 Have fun! 
 
-The quiz questions have come from [Twinkl](https://www.twinkl.co.uk/blog/animal-trivia-questions, where there are many many more interesting questions if you are curious :)
+The quiz questions have come from [Twinkl](https://www.twinkl.co.uk/blog/animal-trivia-questions), where there are many many more interesting questions if you are curious :)
